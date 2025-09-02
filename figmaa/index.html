@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Figma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="nav">
+    <div class="container nav-box">
+        <a class="brand" href="#"><span class="logo"></span><span>BrandName</span></a>
+        <nav class="nav-links">
+            <a href="#features" class="muted">Features</a>
+            <a href="#gallery" class="muted">Gallery</a>
+            <a href="#pricing" class="muted">Pricing</a>
+            <a href="#faq" class="muted">FAQ</a>
+        </nav>
+        <div class="nav-actions">
+            <a class="btn btn-ghost" href="#">Kirish</a>
+            <a class="btn btn-primary" href="#cta">Boshlash</a>
+        </div>
+        <button class="burger" id="burger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="container mobile" id="mobile">
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <div style="display:flex; gap:10px; padding:14px 0;">
+            <a class="btn btn-ghost" href="#">Kirish</a>
+            <a class="btn btn-primary" href="#cta">Boshlash</a>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero-wrap">
+        <div>
+            <div class="eyebrow tag"><span>⚡</span><span>Tez kod — toza struktur</span></div>
+            <h1 class="title">Figma dizaynini <span class="k" style="background:linear-gradient(90deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent">1→1</span> responsiv landingga aylantiring</h1>
+            <p class="subtitle">Quyidagi bloklar Figma-da ko‘p ishlatiladigan patternlarga mos: Hero, Feature cards, Stats, Logos, Testimonial, Pricing, FAQ, CTA, Footer. Matn va rasmlarni almashtiring — tayyor.</p>
+            <div class="hero-cta">
+                <a class="btn btn-primary" href="#features">Bloklar pastda</a>
+                <a class="btn btn-ghost" href="#gallery">Namuna ko‘rish</a>
+            </div>
+            <div class="section" style="padding-top:28px">
+                <div class="stats">
+                    <div class="stat"><div class="num"><span>12+</span></div><div class="lbl">Tayyor blok</div></div>
+                    <div class="stat"><div class="num"><span>3</span> breakpoints</div><div class="lbl">Mobil → Desktop</div></div>
+                    <div class="stat"><div class="num"><span>0</span> kutubxona</div><div class="lbl">Sof HTML + CSS</div></div>
+                    <div class="stat"><div class="num"><span>1</span> fayl</div><div class="lbl">Tez start</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-media">
+            <div class="media-box card">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop" alt="Preview" />
+            </div>
+            <div class="media-float card">
+                <div class="card-inner">
+                    <div class="muted" style="font-size:12px;margin-bottom:6px">Shablon rejasi</div>
+                    <div class="grid grid-2">
+                        <div><strong>Hero</strong><br><span class="muted">Title, CTA</span></div>
+                        <div><strong>Features</strong><br><span class="muted">3-6 kartalar</span></div>
+                        <div><strong>Stats/Logos</strong><br><span class="muted">Ishonch dalili</span></div>
+                        <div><strong>Pricing</strong><br><span class="muted">3 reja</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="section">
+    <div class="container grid grid-3">
+        <div class="card feat">
+            <div class="card-inner">
+                <div class="icon">A</div>
+                <h3 style="margin:10px 0 6px 0">Adaptiv setka</h3>
+                <p class="muted">Grid/Flex asosida. 1→2→3 kolonka layout. Padding, radius, SOFT shadow.</p>
+            </div>
+        </div>
+        <div class="card feat">
+            <div class="card-inner">
+                <div class="icon">B</div>
+                <h3 style="margin:10px 0 6px 0">Toza tipografiya</h3>
+                <p class="muted">Inter shrifti, clamp() bilan sarlavha. Uzoq matnlar uchun 60ch.</p>
+            </div>
+        </div>
+        <div class="card feat">
+            <div class="card-inner">
+                <div class="icon">C</div>
+                <h3 style="margin:10px 0 6px 0">Tez sozlash</h3>
+                <p class="muted">:root o‘zgaruvchilarini almashtiring — butun tema yangilanadi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="section">
+    <div class="container">
+        <div class="grid" style="gap:10px;margin-bottom:18px">
+            <div class="tag">Ishongan mijozlar</div>
+            <h2 style="font-size: clamp(22px, 3.4vw, 36px)">Brend logolari / galereya</h2>
+            <p class="muted">Bu blokni logotiplar, skrinshotlar yoki mahsulot kartalari bilan to‘ldiring.</p>
+        </div>
+        <div class="logos">
+            <div class="logo card"><span class="muted">Logo</span></div>
+            <div class="logo card"><span class="muted">Logo</span></div>
+            <div class="logo card"><span class="muted">Logo</span></div>
+            <div class="logo card"><span class="muted">Logo</span></div>
+            <div class="logo card"><span class="muted">Logo</span></div>
+            <div class="logo card"><span class="muted">Logo</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container card">
+        <div class="card-inner grid grid-2">
+            <div>
+                <div class="tag">⭐️ Fikr</div>
+                <p class="quote" style="margin-top:10px">“Shablon strukturasi Figma bloklariga juda mos tushdi. 2 soat ichida sahifa tayyor bo‘ldi.”</p>
+                <div style="display:flex;align-items:center;gap:10px;margin-top:12px">
+                    <img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300&auto=format&fit=crop" alt="User"/>
+                    <div>
+                        <strong>Jasmina</strong>
+                        <div class="muted" style="font-size:12px">UI/UX dizayner</div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-2">
+                <div class="stat"><div class="num">-40%</div><div class="lbl">Vaqt tejaldi</div></div>
+                <div class="stat"><div class="num">+3x</div><div class="lbl">Ish unumdorligi</div></div>
+                <div class="stat"><div class="num">98%</div><div class="lbl">Qoniqish</div></div>
+                <div class="stat"><div class="num">24/7</div><div class="lbl">Qo‘llab-quvvatlash</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="pricing" class="section">
+    <div class="container">
+        <div class="grid" style="gap:10px;margin-bottom:18px">
+            <div class="tag">Tariflar</div>
+            <h2 style="font-size: clamp(22px, 3.4vw, 36px)">Loyiha uchun mos rejani tanlang</h2>
+            <p class="muted">Narxlar misol uchun berilgan — o‘zingizga moslab almashtiring.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="card">
+                <div class="card-inner">
+                    <h3>Starter</h3>
+                    <div class="price" style="margin:6px 0">$0</div>
+                    <ul class="ul">
+                        <li><span class="check">✓</span><span>1 sahifa</span></li>
+                        <li><span class="check">✓</span><span>Asosiy bloklar</span></li>
+                        <li><span class="check">✓</span><span>Mobilga mos</span></li>
+                    </ul>
+                    <a class="btn btn-ghost" href="#">Tanlash</a>
+                </div>
+            </div>
+            <div class="card" style="border-color:#2a3a63;background:linear-gradient(180deg,#0f1730,#0b1226)">
+                <div class="card-inner">
+                    <div class="tag" style="margin-bottom:6px;background:#122043;border-color:#1f2f5a">Eng ommabop</div>
+                    <h3>Pro</h3>
+                    <div class="price" style="margin:6px 0">$29</div>
+                    <ul class="ul">
+                        <li><span class="check">✓</span><span>3–5 sahifa</span></li>
+                        <li><span class="check">✓</span><span>Kengaytirilgan bloklar</span></li>
+                        <li><span class="check">✓</span><span>Qo‘llab-quvvatlash</span></li>
+                    </ul>
+                    <a class="btn btn-primary" href="#">Tanlash</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <h3>Enterprise</h3>
+                    <div class="price" style="margin:6px 0">$99</div>
+                    <ul class="ul">
+                        <li><span class="check">✓</span><span>Ko‘p sahifa</span></li>
+                        <li><span class="check">✓</span><span>Komponentlar kutubxonasi</span></li>
+                        <li><span class="check">✓</span><span>Uzoq muddatli support</span></li>
+                    </ul>
+                    <a class="btn btn-ghost" href="#">Tanlash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="section">
+    <div class="container grid grid-2">
+        <div>
+            <div class="tag">Savollar</div>
+            <h2 style="font-size: clamp(22px, 3.4vw, 36px)">Ko‘p so‘raladigan savollar</h2>
+            <p class="muted">Akkordeon o‘rniga soddaroq Q&A. Kerak bo‘lsa JS qo‘shib yopiladigan qilamiz.</p>
+        </div>
+        <div class="grid" style="gap:14px">
+            <div class="card"><div class="card-inner"><strong>Q: Qanday tez moslayman?</strong><br><span class="muted">:root ranglarini almashtiring, sarlavha va rasmlarni o‘zgartiring.</span></div></div>
+            <div class="card"><div class="card-inner"><strong>Q: Bootstrap kerakmi?</strong><br><span class="muted">Yo‘q. Sof HTML+CSS. Xohlasangiz Bootstrap versiyasini ham beraman.</span></div></div>
+            <div class="card"><div class="card-inner"><strong>Q: Kod struktura?</strong><br><span class="muted">Semantik bo‘limlar, grid util, component classlar: .card, .btn, .tag.</span></div></div>
+        </div>
+    </div>
+</section>
+
+<section id="cta" class="section cta">
+    <div class="container card">
+        <div class="card-inner grid grid-2" style="align-items:center">
+            <div>
+                <h2 style="font-size: clamp(22px, 3.4vw, 36px)">Figma → Kod jarayonini tezlashtiring</h2>
+                <p class="muted">Shu faylni nusxa oling, bloklarni ko‘paytiring, kontentni almashtiring. 100% responsiv.</p>
+            </div>
+            <div style="display:flex;gap:10px;justify-content:flex-start">
+                <a class="btn btn-primary" href="#">Hozir boshlash</a>
+                <a class="btn btn-ghost" href="#">Dokumentatsiya</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer section">
+    <div class="container grid grid-4">
+        <div>
+            <div class="brand"><span class="logo"></span><span>BrandName</span></div>
+            <p class="muted" style="margin-top:10px">Qisqa ta’rif yoki sloganni yozing. Huquqlar himoyalangan.</p>
+        </div>
+        <div>
+            <strong>Mahsulot</strong>
+            <div class="grid" style="margin-top:10px">
+                <a href="#">Xususiyatlar</a>
+                <a href="#">Narxlar</a>
+                <a href="#">Yangiliklar</a>
+            </div>
+        </div>
+        <div>
+            <strong>Kompaniya</strong>
+            <div class="grid" style="margin-top:10px">
+                <a href="#">Biz haqimizda</a>
+                <a href="#">Kontakt</a>
+                <a href="#">Karyera</a>
+            </div>
+        </div>
+        <div>
+            <strong>Yordam</strong>
+            <div class="grid" style="margin-top:10px">
+                <a href="#">FAQ</a>
+                <a href="#">Qo‘llab-quvvatlash</a>
+                <a href="#">Maxfiylik</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top:24px;color:#7f8aa3;font-size:12px">© 2025 BrandName</div>
+</footer>
+
+
+</body>
+</html>
